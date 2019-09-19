@@ -4,7 +4,20 @@ btn2 = document.getElementById("player2button");
 let player1 = document.getElementById("player1score");
 let player2 = document.getElementById("player2score");
 let winner = document.getElementById("playerinthelead");
+let body = document.getElementsByTagName("body")[0];
+let greenbutton = document.getElementById("greenbutton");
+let purplebutton = document.getElementById("purple");
+let blue = document.getElementById("blue");
 
+greenbutton.addEventListener("click", function() {
+    document.body.style.backgroundColor = 'green';
+});
+purplebutton.addEventListener("click", function() {
+    document.body.style.backgroundColor = 'purple';
+});
+blue.addEventListener("click", function() {
+    document.body.style.backgroundColor = 'blue';
+});
 
 
 function counter() {
@@ -18,7 +31,6 @@ function counter() {
     else if (parseInt(player1.innerText) < parseInt(player2.innerText)){
         winner.innerText = "Player 2"
     }
-
 
 }
 

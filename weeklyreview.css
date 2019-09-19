@@ -1,8 +1,11 @@
+
 html, body{
     color: white;
-    background: #9FE2BF ;
     height: 100%;
     font-family: 'Manjari', sans-serif
+}
+body{
+    background: green;
 }
 section{
     display: grid;
@@ -10,6 +13,7 @@ section{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
+
 #heading{
     text-align: center;
     grid-column: 1/11;
@@ -68,4 +72,7 @@ footer{
     background: #2AB7CA;
     border: 1px solid gray;
     font-size: 48px;
+}
+#optblock{
+
 }
